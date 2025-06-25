@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Memories</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .photo-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+        
+        .photo-container {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-container:hover {
+            transform: translateY(-5px);
+        }
+        
+        .landscape {
+            height: 400px;
+        }
+        
+        .portrait {
+            height: 600px;
+        }
+        
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 105, 180, 0.8);
+            color: white;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .personal-note {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+            border: 2px solid #ff69b4;
+        }
+        
+        .personal-note p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            color: #ff69b4;
+            font-weight: bold;
+        }
+        
+        .signature {
+            font-style: italic;
+            color: #ff69b4;
+            margin-top: 20px;
+            font-size: 1.3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .photo-gallery {
+                flex-direction: column;
+            }
+            
+            .photo-container {
+                min-width: 100%;
+            }
+            
+            .landscape, .portrait {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Special Memories</h1>
+        
+        <div class="photo-gallery">
+            <div class="photo-container landscape">
+                <img src="foto1.jpeg" alt="Landscape Memory">
+                <div class="photo-caption">Our Happy Moment Together</div>
+            </div>
+            
+            <div class="photo-container portrait">
+                <img src="foto2.jpeg" alt="Portrait Memory">
+                <div class="photo-caption">Your Beautiful Smile</div>
+            </div>
+        </div>
+        
+        <div class="personal-note">
+            <p>Dear <span class="highlight">Kharir</span>,</p>
+            <p>These photos capture just a glimpse of all the beautiful moments we've shared. Every second with you feels like a precious gift that I cherish deeply.</p>
+            <p>Your smile brightens my darkest days, and your presence makes everything better. I just wanted to take a moment to remind you how special you are to me.</p>
+            <p>No matter what happens, these memories will always hold a special place in my heart.</p>
+            <div class="signature">With all my love,<br>2303</div>
+        </div>
+    </div>
+</body>
+</html>

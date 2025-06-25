@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Will You Be My Girlfriend?</title>
+    <link rel="stylesheet" href="web1.css">
+</head>
+<body>
+
+<audio id="backgroundAudio" autoplay loop>
+  <source src="comeback.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="backgroundAudio2" autoplay loop>
+  <source src="strong.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="container">
+  <!-- Page 1 -->
+  <section id="page1" class="page active" aria-label="Proposal page">
+    <h1>Will you <br/>comeback to me?</h1>
+    <p class="subtitle">2606</p>
+    <div style="position: relative; height: 70px; margin-top: 40px;">
+      <button id="yesBtn">Yes I do 💖</button>
+      <button id="noBtn">No, leave me alone 😢</button>
+      <button id="audioBtn" onclick="toggleAudio()">Play Audio 🎵</button>
+    </div>
+  </section>
+
+  <!-- Page 2 - Catatan -->
+  <section id="page2" class="page" aria-label="Note">
+    <h2>Happy Birth Day <br>Kharirr....</h2>
+    <p class="note">To me, this day will always hold special meaning since it marks the day that the world was made better by your presence. Happy Birthday! Kharir.💖</p>
+    <p class="note">Do you know what's make sad? When I never communicate with you, even I meet you is impossible. Praying for you is my way of loving you even without your knowledge. I love you because I think it's not easy to get your heart. Sometimes I miss you. I can't forget when we often communicate smoothly and joke with you. Those memories are still attached to my heart. I will always wait for you. It doesn't matter if we never meet and communicate. As long as the final chapter is you. Take care of yourself and keep healthy</p>
+    <p class="note">2303</p>
+    <button id="continueBtn" onclick="switchPage(3)">Lanjutkan</button>
+  </section>
+
+  <!-- Page 3 -->
+ <section id="page3" class="page" aria-label="Romantic message">
+        <div class="card" role="region" aria-live="polite" aria-atomic="true">
+            <h2>I'm Sorry 💘</h2>
+            <h3>If I Say "I Need You"</h3>
+            <h3>But I don't care, I'm not scared of love</h3>
+            <h3>Cause when I'm not with you, I'm weaker</h3>
+            <h3>Is that so wrong? Is it so wrong?</h3>
+            <div class="btn-container">
+                <button id="audioBtn2" onclick="toggleAudio2()">Play Audio 🎵</button>
+                <button id="nextPageBtn" onclick="goToNextPage()">Next Page 📸</button>
+            </div>
+        </div>
+    </section>
+<a href=""></a>
+<script src="web1.js"></script>
+</body>
+</html>
